@@ -101,3 +101,10 @@ public class BoaTest {
 Results for feet to inch
 
 ![image](https://user-images.githubusercontent.com/75687413/233037134-66982172-9ea2-4cbc-a55d-4172034c6d7d.png)
+
+
+8.
+Different annotations:
+Test methods annotated with @Test will be run, but the order of the tests is not guaranteed. This means that the tests may run in any order during test execution. It's important to write tests in such a way that they are independent of each other and do not rely on a specific execution order.
+Any method annotated with @Before will be run before each test executes. This allows you to set up common test fixtures or perform any necessary setup steps before each test runs. For example, you can use @Before to initialize objects, set up mock objects, or perform any other necessary setup operations.
+Any method annotated with @After will be run after each test executes. This allows you to clean up any resources or perform any necessary teardown steps after each test runs. For example, you can use @After to release resources, reset state, or perform any other necessary cleanup operations.
